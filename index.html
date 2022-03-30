@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+      integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>IP Address Tracker</title>
+  </head>
+  <body>
+    <div class="landing">
+      <div class="container">
+        <div class="content">
+          <h1>IP Address Tracker</h1>
+          <div class="input">
+            <input
+              type="text"
+              placeholder="Search for any IP address or domain"
+              class="ip"
+            /><i class="shm fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="container">
+        <div class="con">
+          <div class="ipa">
+            <h6>IP ADDRESS</h6>
+            <h2>-</h2>
+          </div>
+          <div class="location">
+            <h6>LOCATION</h6>
+            <h2>-</h2>
+          </div>
+          <div class="timezone">
+            <h6>TIMEZONE</h6>
+            <h2>-</h2>
+          </div>
+          <div class="isp">
+            <h6>ISP</h6>
+            <h2>-</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="map"></div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

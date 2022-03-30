@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.landing {
+  background: url(../images/pattern-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* height: 32vh; */
+  height: 250px;
+}
+@media (max-width: 767px) {
+  .landing {
+    height: 200px;
+  }
+}
+
+.landing .container .content {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.landing .content h1 {
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: -1px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.landing .content .input input {
+  padding: 12px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border: none;
+  outline: none;
+  width: 60%;
+}
+
+.landing .input .shm {
+  background-color: #000;
+  font-size: 20px;
+  width: 45px;
+  padding: 13px 0 15px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.landing .input .shm:hover {
+  background-color: hsl(0, 0%, 17%);
+}
+
+@media (max-width: 767px) {
+  .landing .content h1 {
+    font-size: 27px;
+  }
+  .landing .content .input input {
+    font-size: 12px;
+  }
+  .landing .input .shm {
+    padding: 12px 0 14px;
+    font-size: initial;
+  }
+}
+
+.info .container {
+  position: relative;
+}
+
+.info .container .con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 35px;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 1000;
+  width: 97%;
+}
+
+.info .con h6 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: hsl(0, 0%, 59%);
+}
+
+.info .con h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  padding-right: 30px;
+}
+
+.info .con h2:last-child {
+  padding-right: 0;
+}
+
+.info .con .location,
+.info .con .timezone,
+.info .con .isp {
+  position: relative;
+  width: 25%;
+  height: 90px;
+}
+
+.info .con .ipa {
+  width: 25%;
+  height: 90px;
+}
+
+.info .con .location::before,
+.info .con .timezone::before,
+.info .con .isp::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: hsl(0, 0%, 59%);
+  left: -10%;
+}
+
+@media (max-width: 991px) {
+  .info .con h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .info .container .con {
+    flex-direction: column;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    text-align: center;
+    padding: 15px 10px;
+    width: 70%;
+  }
+  .info .con .location::before,
+  .info .con .timezone::before,
+  .info .con .isp::before {
+    display: none;
+  }
+  .info .con .location,
+  .info .con .timezone,
+  .info .con .isp,
+  .info .con .ipa {
+    width: initial;
+    height: initial;
+    padding-bottom: 20px;
+  }
+  .info .con h2 {
+    padding-right: 0;
+  }
+}
+#map {
+  height: calc(100vh - 250px);
+}
+
+@media (max-width: 767px) {
+  #map {
+    height: calc(100vh - 200px);
+  }
+}
